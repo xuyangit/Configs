@@ -1,0 +1,22 @@
+{
+	"name": "integrationRuntime2",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "Central US",
+				"nodeSize": "Standard_D2_v3",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 2,
+				"vNetProperties": {
+					"vNetId": "/subscriptions/1491d049-b7ce-4dc5-9833-d2947b0bd2e1/resourceGroups/SharedResource_PrivateDeploy/providers/Microsoft.Network/virtualNetworks/publiciptest2",
+					"subnet": "default"
+				}
+			},
+			"ssisProperties": {
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded"
+			}
+		}
+	}
+}
